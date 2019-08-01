@@ -1,0 +1,88 @@
+/*Rep Your City Game*/
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: orange;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: gray;
+}
+
+.deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg {
+    display: flex;
+    justify-content: center;
+}
+.startGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.circleOne {
+     content: ' \25CF';
+    font-size: 80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+.circleTwo {
+     content: ' \25CF';
+    font-size: 80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: green;
+    color: white;
+}
+.circleThree {
+     content: ' \25CF';
+    font-size: 80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: blue;
+    color: white;
+}
+.circleFour {
+     content: ' \25CF';
+    font-size: 80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+#upper_left {
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+#upper_right {
+	position: absolute;
+	top: 80px;
+	right: 0%;
+}
+#lower_left {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+}
+#lower_right {
+	bottom: 0%;
+	right: 0%;
+	position: absolute;
+}
