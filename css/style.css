@@ -10,7 +10,7 @@ h1 {
 body {
     display: flex;
     flex-direction: column;
-    background: gray;
+    background: url(https://i.imgur.com/ocaZjTY.jpg);
 }
 
 .deck {
@@ -23,14 +23,9 @@ body {
     justify-content: center;
 }
 
-.startGame {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-}
 
 .circleOne {
-     content: ' \25CF';
+    content: ' \25CF';
     font-size: 80px;
     width: 300px;
     height: 300px;
@@ -40,7 +35,7 @@ body {
 }
 
 .circleTwo {
-     content: ' \25CF';
+    content: ' \25CF';
     font-size: 80px;
     width: 300px;
     height: 300px;
@@ -50,7 +45,7 @@ body {
 }
 
 .circleThree {
-     content: ' \25CF';
+    content: ' \25CF';
     font-size: 80px;
     width: 300px;
     height: 300px;
@@ -60,7 +55,7 @@ body {
 }
 
 .circleFour {
-     content: ' \25CF';
+    content: ' \25CF';
     font-size: 80px;
     width: 300px;
     height: 300px;
@@ -70,7 +65,7 @@ body {
 }
 
 #upper_left {
-	position: absolute;
+    position: absolute;
 	top: 80px;
     left: 0;
     background: url(https://i.imgur.com/1o9PXdA.jpg);
@@ -79,7 +74,7 @@ body {
 }
 
 #upper_right {
-	position: absolute;
+    position: absolute;
 	top: 80px;
     right: 0%;
     background: url(https://i.imgur.com/h8aWsr2.jpg);
@@ -88,7 +83,7 @@ body {
 }
 
 #lower_left {
-	position: absolute;
+    position: absolute;
 	bottom: 0%;
     left: 0;
     background: url(https://livability.com/sites/default/files/dallas_2.jpg);
@@ -97,7 +92,7 @@ body {
 }
 
 #lower_right {
-	bottom: 0%;
+    bottom: 0%;
 	right: 0%;
     position: absolute;
     background: url(https://i.imgur.com/sQ7asLn.jpg);
@@ -116,4 +111,19 @@ body {
     font-weight: bold;
     background: orange;
     color: black;
+}
+#gameButtons {
+    display: flex;
+    justify-content: center;
+}
+.startGame {
+    height: 100px;
+    width: 200px;
+    font-size: 22px;
+}
+.dealCard {
+    display: none;
+    height: 100px;
+    width: 200px;
+    font-size: 22px;
 }
