@@ -34,32 +34,20 @@ const studentCards = [{
     cardImage: "image/atxbeverlyosoria"
 },
     {
-
+    name: "Chris Mayfield",
+    city: "atx",
+    cardImage: "image/atxchrismayfield"
 },
     {
-
+    name: "Emily Landgrebe",
+    city: "atx",
+    cardImage: "image/atxemilylandgrebe"
 },
     {
-
-},
-    {
-
-},
-    {
-
-},
-    {
-
-},
-    {
-
-},
-    {
-
-},
-    {
-
-},
+    name: "Jared Rodriguez",
+    city: "atx",
+    cardImage: "image/atxjaredrodriguez"
+    }
 ]
 const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
 const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koenig-1132888100.mp3');
@@ -71,24 +59,31 @@ let cityCounts, timer, winner;
 
 
 /*----- event listeners -----*/
+document.querySelector('.dealCard')
+.addEventListener('click', dealCard);
 
 
 /*----- functions -----*/
 
-function dealStudent() {
-    document.querySelector('dealCard')
-    .addEventListener('click', function(evt){
-        //random function, then save 
-    }) 
-}
-
 console.log(Object.keys(studentCards));
 
-// let ranNum = Math.random() * 75
-// let obj = tudentCards[ranNum]
 
-// if(input === )
-
+function dealCard() {
+    let maxRange = studentCards.length;
+    let objArr = [];
+    let i = getRandomInt (0, maxRange);
+    console.log(i);
+    let cardPulled=studentCards[i];
+    objArr.push(studentCards[i]);
+    studentCards.splice(i, 1);
+    maxRange --;
+    return cardPulled;
+}
+function getRandomInt(min, maxRange) {
+    min = Math.ceil(min);
+    maxRange = Math.floor(maxRange);
+    return Math.floor(Math.random() * (maxRange - min)) + min;
+}
 
 let button = document.querySelector('.sf');
 
@@ -119,7 +114,8 @@ let butdal = document.querySelector('.dal');
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     // console.log(typeof input)
-    if(input === "dal"){
+    let student=dealCard();
+    if(student.city === "dal"){
         console.log("match")
     } else {
         console.log("no match")
@@ -130,10 +126,12 @@ let butatx = document.querySelector('.atx');
 butatx.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     // console.log(typeof input)
-    if(input === "atx"){
-        console.log("match")
+    let student=dealCard();
+    console.log(studentCards[0]);
+    if(student.city === "atx"){
+        console.log("match");
     } else {
-        console.log("no match")
+        console.log("no match");
     }
 });
 
