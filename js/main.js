@@ -85,6 +85,19 @@ function getRandomInt(min, maxRange) {
     return Math.floor(Math.random() * (maxRange - min)) + min;
 }
 
+let totalSeconds = 60;
+var timeSeconds = parseInt(total_seconds % 60);
+function gameTime () {
+    document.querySelector(".timer").innerHTML='Time left: ' + c_seconds + ' seconds'; 
+    if(totalSeconds <=0) {
+        gameOver('document.quiz.submit()',1);
+    } else{
+        totalSeconds = totalSeconds -1;
+        timeSeconds = parseInt(totalSeconds%60);
+        gameOver('gameTime()', 6000);
+    }}
+    gameOver('gameTime()',6000);
+
 let button = document.querySelector('.sf');
 
 button.addEventListener('click', function(evt){
