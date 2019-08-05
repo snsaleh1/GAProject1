@@ -114,6 +114,54 @@ const studentCards = [{
     name: "Julia Galan",
     city: "atx",
     cardImage: "image/atxjuliagalan"
+}, {
+    name: "Andrew Theismann",
+    city: "dal",
+    cardImage: "image/andrewtheismann"
+}, {
+    name: "Beth Smith",
+    city: "dal",
+    cardImage: "image/dalbethsmith"
+}, {
+    name: "Cole Holmes",
+    city: "dal",
+    cardImage: "image/dalcoleholmes"
+}, {
+    name: "Daniel Scott",
+    city: "dal",
+    cardImage: "image/daldanielscott"
+}, {
+    name: "James Talambas",
+    city: "dal",
+    cardImage: "image/daljamestalambas"
+}, {
+    name: "Joseph Hunt",
+    city: "dal",
+    cardImage: "image/daljosephhunt"
+}, {
+    name: "Phillip Avila",
+    city: "dal",
+    cardImage: "image/dalphillipavila"
+}, {
+    name: "Ruben Caceres",
+    city: "dal",
+    cardImage: "image/dalrubencaceres"
+}, {
+    name: "Ryan George",
+    city: "dal",
+    cardImage: "image/dalryangeorge"
+}, {
+    name: "Sam Gathoni",
+    city: "dal",
+    cardImage: "image/dalsamgathoni"
+}, {
+    name: "Michael Martinez",
+    city: "dal",
+    cardImage: "image/dalmichaelmartinez"
+}, {
+    name: "Michael Hinte",
+    city: "dal",
+    cardImage: "image/dalmichaelhinte"
 }
 ]
 const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
@@ -123,7 +171,7 @@ const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koeni
 let start = false;
 
 /*----- app's state (variables) -----*/
-let cityCounts, timer, winner, time;
+let cityCounts, timer, winner, time, randStu;
 
 /*----- cached element references -----*/
 
@@ -140,55 +188,57 @@ document.querySelector('.startGame')
 console.log(Object.keys(studentCards));
 
 
-    function dealCard() {
-        let maxRange = studentCards.length;
-        let objArr = [];
-        let i = getRandomInt (0, maxRange);
-        console.log(i);
-        let cardPulled=studentCards[i];
-        objArr.push(studentCards[i]);
-        studentCards.splice(i, 1);
-        maxRange --;
-        return cardPulled;
-    }
-    function getRandomInt(min, maxRange) {
-        min = Math.ceil(min);
-        maxRange = Math.floor(maxRange);
-        return Math.floor(Math.random() * (maxRange - min)) + min;
-    }
+function dealCard() {
+    let maxRange = studentCards.length;
+    let objArr = [];
+    randStu = getRandomInt (0, maxRange);
+    console.log(randStu);
+    let cardPulled=studentCards[randStu];
+    objArr.push(studentCards[randStu]);
+    studentCards.splice(randStu, 1);
+    maxRange --;
+    return cardPulled;
 
-    function startGame(){
-        let firstCard = getRandomInt(0, studentCards.length);
-        start = true;
+}
+function getRandomInt(min, maxRange) {
+    min = Math.ceil(min);
+    maxRange = Math.floor(maxRange);
+    return Math.floor(Math.random() * (maxRange - min)) + min;
+}
+
+function startGame(){
+    let firstCard = getRandomInt(0, studentCards.length);
+    start = true;
+    time = 60;
+    countdown();
+    render();
+}
+
+function render() {
+    if(start) {
+        document.querySelector('.startGame').style.display='none';
+        document.querySelector('.dealCard').style.display='block';
+} else {
+        document.querySelector('.startGame').style.display='block';
+        document.querySelector('.dealCard').style.display='none';
+    }
+}
+
+let timerTwo = document.getElementById('demo');
+function countdown(){
+    timer = setInterval(function (){
+        time--;
+        if(time){
+            timerTwo.textContent = `Time left: ${time}`;
+    }else {
+        clearInterval(timer);
+        timerTwo.textContent = `GAME OVER`;
+        document.querySelector('.startGame').style.display='block';
+        document.querySelector('.dealCard').style.display='none';
         time = 60;
-        countdown();
-        render();
-    }
-
-    function render() {
-        if(start) {
-            document.querySelector('.startGame').style.display='none';
-            document.querySelector('.dealCard').style.display='block';
-        } else {
-            document.querySelector('.startGame').style.display='block';
-            document.querySelector('.dealCard').style.display='none';
         }
-    }
-    let timerTwo = document.getElementById('demo');
-    function countdown(){
-        timer = setInterval(function (){
-            time--;
-            if(time){
-                timerTwo.textContent = `Time left: ${time}`;
-            }else{
-                clearInterval(timer);
-                timerTwo.textContent = `GAME OVER`;
-                document.querySelector('.startGame').style.display='block';
-                document.querySelector('.dealCard').style.display='none';
-                time = 60;
-            }
-        }, 1000)
-    }
+    }, 1000)
+}
 
 function gameOver(){
     document.querySelector('.startGame').style.display='block';
@@ -199,24 +249,14 @@ let button = document.querySelector('.sf');
 
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    // console.log(typeof input)
-    if(input === "sf"){
-        console.log("match")
-    } else {
-        console.log("no match")
-}
+    console.log(studentCards[randStu].city === input ? "match" : "no match");
 })
 
 let butsm = document.querySelector('.sm');
 
 butsm.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    // console.log(typeof input)
-    if(input === "sm"){
-        console.log("match")
-    } else {
-        console.log("no match")
-    }
+    console.log(studentCards[randStu].city === input ? "match" : "no match");
 })
 
 let butdal = document.querySelector('.dal');
@@ -224,25 +264,13 @@ let butdal = document.querySelector('.dal');
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     // console.log(typeof input)
-    let student=dealCard();
-    if(student.city === "dal"){
-        console.log("match")
-    } else {
-        console.log("no match")
-    }
+    console.log(studentCards[randStu].city === input ? "match" : "no match");
 })
 
 let butatx = document.querySelector('.atx');
 butatx.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    // console.log(typeof input)
-    let student=dealCard();
-    console.log(studentCards[0]);
-    if(student.city === "atx"){
-        console.log("match");
-    } else {
-        console.log("no match");
-    }
+    console.log(studentCards[randStu].city === input ? "match" : "no match");
 });
 
 var rs = Math.floor()
