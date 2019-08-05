@@ -119,8 +119,11 @@ const studentCards = [{
 const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
 const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koenig-1132888100.mp3');
 
+//dealCard will start off false 
+let start = false;
+
 /*----- app's state (variables) -----*/
-let cityCounts, timer, winner;
+let cityCounts, timer, winner, time;
 
 /*----- cached element references -----*/
 
@@ -129,40 +132,68 @@ let cityCounts, timer, winner;
 document.querySelector('.dealCard')
 .addEventListener('click', dealCard);
 
+document.querySelector('.startGame')
+.addEventListener('click', startGame);
 
 /*----- functions -----*/
 
 console.log(Object.keys(studentCards));
 
 
-function dealCard() {
-    let maxRange = studentCards.length;
-    let objArr = [];
-    let i = getRandomInt (0, maxRange);
-    console.log(i);
-    let cardPulled=studentCards[i];
-    objArr.push(studentCards[i]);
-    studentCards.splice(i, 1);
-    maxRange --;
-    return cardPulled;
-}
-function getRandomInt(min, maxRange) {
-    min = Math.ceil(min);
-    maxRange = Math.floor(maxRange);
-    return Math.floor(Math.random() * (maxRange - min)) + min;
-}
+    function dealCard() {
+        let maxRange = studentCards.length;
+        let objArr = [];
+        let i = getRandomInt (0, maxRange);
+        console.log(i);
+        let cardPulled=studentCards[i];
+        objArr.push(studentCards[i]);
+        studentCards.splice(i, 1);
+        maxRange --;
+        return cardPulled;
+    }
+    function getRandomInt(min, maxRange) {
+        min = Math.ceil(min);
+        maxRange = Math.floor(maxRange);
+        return Math.floor(Math.random() * (maxRange - min)) + min;
+    }
 
-let totalSeconds = 60;
-var timeSeconds = parseInt(totalSeconds % 60);
-function gameTime () {
-    document.querySelector(".timer").innerHTML='Time left: ' + timeSeconds + ' seconds'; 
-    if(totalSeconds <=0) {
-        gameOver('document.quiz.submit()',1);
-    } else{
-        totalSeconds = totalSeconds -1;
-        timeSeconds = parseInt(totalSeconds%60);
-        gameOver('gameTime()', 6000);
-    }}
+    function startGame(){
+        let firstCard = getRandomInt(0, studentCards.length);
+        start = true;
+        time = 60;
+        countdown();
+        render();
+    }
+
+    function render() {
+        if(start) {
+            document.querySelector('.startGame').style.display='none';
+            document.querySelector('.dealCard').style.display='block';
+        } else {
+            document.querySelector('.startGame').style.display='block';
+            document.querySelector('.dealCard').style.display='none';
+        }
+    }
+    let timerTwo = document.getElementById('demo');
+    function countdown(){
+        timer = setInterval(function (){
+            time--;
+            if(time){
+                timerTwo.textContent = `Time left: ${time}`;
+            }else{
+                clearInterval(timer);
+                timerTwo.textContent = `GAME OVER`;
+                document.querySelector('.startGame').style.display='block';
+                document.querySelector('.dealCard').style.display='none';
+                time = 60;
+            }
+        }, 1000)
+    }
+
+function gameOver(){
+    document.querySelector('.startGame').style.display='block';
+    document.querySelector('.dealCard').style.display='none';
+}
 
 let button = document.querySelector('.sf');
 
@@ -215,3 +246,4 @@ butatx.addEventListener('click', function(evt){
 });
 
 var rs = Math.floor()
+render();
