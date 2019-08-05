@@ -47,7 +47,74 @@ const studentCards = [{
     name: "Jared Rodriguez",
     city: "atx",
     cardImage: "image/atxjaredrodriguez"
-    }
+},
+    {
+    name: "Joe Gerhard",
+    city: "atx",
+    cardImage: "image/atxjoegerhard"
+},
+    {
+    name: "Chris Williams",
+    city: "atx",
+    cardImage: "image/atxchriswilliams"
+},
+    {
+    name: "David Bae",
+    city: "atx",
+    cardImage: "image/atxdavidbae"
+}, {
+    name: "Francis Cancio",
+    city: "atx",
+    cardImage: "image/atxfranciscancio"
+}, {
+    name: "Nova Hasley",
+    city: "atx",
+    cardImage: "image/atxnovahasley"
+}, {
+    name: "Emily Moore",
+    city: "atx",
+    cardImage: "image/atxemilymoore"
+}, {
+    name: "Elco Garcia",
+    city: "atx",
+    cardImage: "image/atxelcogarcia"
+}, {
+    name: "Chris Perez",
+    city: "atx",
+    cardImage: "image/atxchrisperez"
+}, {
+    name: "Taylor Lacerte",
+    city: "atx",
+    cardImage: "image/atxtaylorlacerte"
+}, {
+    name: "Robin Dao",
+    city: "atx",
+    cardImage: "image/atxrobindao"
+}, {
+    name: "Mason Pierce",
+    city: "atx",
+    cardImage: "image/atxmasonpierce"
+}, {
+    name: "Vittoria Erdem",
+    city: "atx",
+    cardImage: "image/atxvittoriaerdem"
+}, {
+    name: "Jeremiah Garza",
+    city: "atx",
+    cardImage: "image/atxjeremiahgarza"
+}, {
+    name: "Connor Mccabe",
+    city: "atx",
+    cardImage: "image/atxconnormccabe"
+}, {
+    name: "Lily Best",
+    city: "atx",
+    cardImage: "image/atxlilybest"
+}, {
+    name: "Julia Galan",
+    city: "atx",
+    cardImage: "image/atxjuliagalan"
+}
 ]
 const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
 const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koenig-1132888100.mp3');
@@ -96,7 +163,6 @@ function gameTime () {
         timeSeconds = parseInt(totalSeconds%60);
         gameOver('gameTime()', 6000);
     }}
-    gameOver('gameTime()',6000);
 
 let button = document.querySelector('.sf');
 
