@@ -86,9 +86,9 @@ function getRandomInt(min, maxRange) {
 }
 
 let totalSeconds = 60;
-var timeSeconds = parseInt(total_seconds % 60);
+var timeSeconds = parseInt(totalSeconds % 60);
 function gameTime () {
-    document.querySelector(".timer").innerHTML='Time left: ' + c_seconds + ' seconds'; 
+    document.querySelector(".timer").innerHTML='Time left: ' + timeSeconds + ' seconds'; 
     if(totalSeconds <=0) {
         gameOver('document.quiz.submit()',1);
     } else{
