@@ -1,168 +1,224 @@
 //Rep Your City Game
 /*----- constants -----*/
 const studentCards = [{
-    name: "Caleb Saleh",
+    name: " Caleb Saleh ",
     city: "atx",
     cardImage: "images/atxcalebsaleh.png"
 }, {
-    name: "David Bae",
+    name: " David Bae ",
     city: "atx",
     cardImage: "images/atxdavidbae.png"
 },  {
-    name: "Chighali Mouknass",
+    name: " Chighali Mouknass ",
     city: "atx",
     cardImage: "images/atxchighalimouknass.png"
 },
     {
-    name: "Dev Govindji",
+    name: " Dev Govindji ",
     city: "atx",
     cardImage: "images/atxdevgovindji.png"
 }, 
     {
-    name: "Heather Etheridge",
+    name: " Heather Etheridge ",
     city: "atx",
     cardImage: "images/atxheatheretheridge.png"
 },
     {
-    name: "Jack Ground",
+    name: " Jack Ground ",
     city: "atx",
     cardImage: "images/atxjackground.png"
 },
     {
-    name: "Beverly Osoria",
+    name: " Beverly Osoria ",
     city: "atx",
     cardImage: "images/atxbeverlyosoria.jpg"
 },
     {
-    name: "Chris Mayfield",
+    name: " Chris Mayfield ",
     city: "atx",
     cardImage: "images/atxchrismayfield.png"
 },
     {
-    name: "Emily Landgrebe",
+    name: " Emily Landgrebe ",
     city: "atx",
     cardImage: "images/atxemilylandgrebe.png"
 },
     {
-    name: "Jared Rodriguez",
+    name: " Jared Rodriguez ",
     city: "atx",
     cardImage: "images/atxjaredrodriguez.png"
 },
     {
-    name: "Joe Gerhard",
+    name: " Joe Gerhard ",
     city: "atx",
     cardImage: "images/atxjoegerhard.png"
 },
     {
-    name: "Chris Williams",
+    name: " Chris Williams ", 
     city: "atx",
     cardImage: "images/atxchriswilliams.png"
 },
     {
-    name: "David Bae",
+    name: " David Bae ",
     city: "atx",
     cardImage: "images/atxdavidbae.png"
 }, {
-    name: "Francis Cancio",
+    name: " Francis Cancio ",
     city: "atx",
     cardImage: "images/atxfranciscancio.png"
 }, {
-    name: "Nova Hasley",
+    name: " Nova Hasley ",
     city: "atx",
     cardImage: "images/atxnovahasley.png"
 }, {
-    name: "Emily Moore",
+    name: " Emily Moore ",
     city: "atx",
     cardImage: "images/atxemilymoore.png"
 }, {
-    name: "Elco Garcia",
+    name: " Elco Garcia ",
     city: "atx",
     cardImage: "images/atxelcogarcia.png"
 }, {
-    name: "Chris Perez",
+    name: " Chris Perez ",
     city: "atx",
     cardImage: "images/atxchrisperez.png"
 }, {
-    name: "Taylor Lacerte",
+    name: " Taylor Lacerte ",
     city: "atx",
     cardImage: "images/atxtaylorlacerte.png"
 }, {
-    name: "Robin Dao",
+    name: " Robin Dao ",
     city: "atx",
     cardImage: "images/atxrobindao.png"
 }, {
-    name: "Mason Pierce",
+    name: " Mason Pierce ",
     city: "atx",
     cardImage: "images/atxmasonpierce.png"
 }, {
-    name: "Vittoria Erdem",
+    name: " Vittoria Erdem ",
     city: "atx",
     cardImage: "images/atxvittoriaerdem.png"
 }, {
-    name: "Jeremiah Garza",
+    name: " Jeremiah Garza ",
     city: "atx",
     cardImage: "images/atxjeremiahgarza.png"
 }, {
-    name: "Connor Mccabe",
+    name: " Connor Mccabe ",
     city: "atx",
     cardImage: "images/atxconnormccabe.png"
 }, {
-    name: "Lily Best",
+    name: " Lily Best ",
     city: "atx",
     cardImage: "images/atxlilybest.png"
 }, {
-    name: "Julia Galan",
+    name: " Julia Galan ",
     city: "atx",
     cardImage: "images/atxjuliagalan.png"
 }, {
-    name: "Andrew Theismann",
+    name: " Andrew Theismann ",
     city: "dal",
     cardImage: "images/dalandrewtheismann.png"
 }, {
-    name: "Beth Smith",
+    name: " Beth Smith ",
     city: "dal",
     cardImage: "images/dalbethsmith.png"
 }, {
-    name: "Cole Holmes",
+    name: " Cole Holmes ",
     city: "dal",
     cardImage: "images/dalcoleholmes.png"
 }, {
-    name: "Daniel Scott",
+    name: " Daniel Scott ",
     city: "dal",
     cardImage: "images/daldanielscott.png"
 }, {
-    name: "James Talambas",
+    name: " James Talambas ",
     city: "dal",
     cardImage: "images/daljamestalambas.png"
 }, {
-    name: "Joseph Hunt",
+    name: " Joseph Hunt ",
     city: "dal",
     cardImage: "images/daljosephhunt.png"
 }, {
-    name: "Phillip Avila",
+    name: " Phillip Avila ",
     city: "dal",
     cardImage: "images/dalphillipavila.png"
 }, {
-    name: "Ruben Caceres",
+    name: " Ruben Caceres ",
     city: "dal",
     cardImage: "images/dalrubencaceres.png"
 }, {
-    name: "Ryan George",
+    name: " Ryan George ",
     city: "dal",
     cardImage: "images/dalryangeorge.png"
 }, {
-    name: "Sam Gathoni",
+    name: " Sam Gathoni ",
     city: "dal",
     cardImage: "images/dalsamgathoni.png"
 }, {
-    name: "Michael Martinez",
+    name: " Michael Martinez ",
     city: "dal",
     cardImage: "images/dalmichaelmartinez.png"
 }, {
-    name: "Michael Hinte",
+    name: " Michael Hinte ",
     city: "dal",
     cardImage: "images/dalmichaelhinte.png"
-}
+}, {
+    name: "Aly Nguyen",
+    city: "sf",
+    cardImage: "images/sfalynguyen.png"
+}, {
+    name: "Anami",
+    city: "sf",
+    cardImage: "images/sfanami.png"
+}, {
+    name: "Anna Filatova",
+    city: "sf",
+    cardImage: "images/sfannafilatova.png"
+}, {
+    name: "Braxton Toomer",
+    city: "sf",
+    cardImage: "images/sfbraxtontoomer.png"
+}, {
+    name: "Brock Whitbread",
+    city: "sf",
+    cardImage: "images/sfbrockwhitbread.png"
+}, {
+    name: "Charles Santana",
+    city: "sf",
+    cardImage: "images/sfcharlessantana.png"
+}, {
+    name: "Greg Merrill",
+    city: "sf",
+    cardImage: "images/sfgregmerrill.png"
+}, {
+    name: "Greg Redig",
+    city: "sf",
+    cardImage: "images/sfgregredig.png"
+}, {
+    name: "Jon Pak",
+    city: "sf",
+    cardImage: "images/sfjonpak.png"
+}, {
+    name: "Matthew Robin",
+    city: "sf",
+    cardImage: "images/sfmatthewrobin.png"
+}, {
+    name: "Ny Antsa Rajaonarison",
+    city: "sf",
+    cardImage: "images/sfnyantsarajaonarison.png"
+}, {
+    name: "Preston Hom",
+    city: "sf",
+    cardImage: "images/sfprestonhom.png"
+}, {
+    name: "Samantha Shackelford",
+    city: "sf",
+    cardImage: "images/samanthashackelford.png"
+}, {
+    name: "Sorrel June",
+    city: "sf",
+    cardImage: "images/sfsorreljune.png"
+}, {
 ]
 const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
 const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koenig-1132888100.mp3');
@@ -171,12 +227,21 @@ const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koeni
 let start = false;
 
 /*----- app's state (variables) -----*/
-let cityCounts, timer, winner, time, randStu, score;
+let cityCounts, timer, winner, time, randStu, score, cardPulled;
+let sfCount = 0;
+let smCount = 0;
+let dalCount = 0;
+let atxCount = 0;
 
 /*----- cached element references -----*/
 let picSpot = document.getElementById("placeHolder");
 let stuPic = document.getElementById("stuPic");
 let stuName = document.getElementById("stuName");
+let sfCountEl = document.querySelector('.sfCount');
+let smCountEl = document.querySelector('.smCount');
+let dalCountEl = document.querySelector('.dalCount');
+let atxCountEl = document.querySelector('.atxCount');
+let msgEl = document.querySelector('.msg');
 
 /*----- event listeners -----*/
 document.querySelector('.dealCard')
@@ -194,12 +259,13 @@ function dealCard() {
     let objArr = [];
     randStu = Math.floor(Math.random() * maxRange);
     console.log(randStu ,maxRange)
-    let cardPulled=studentCards[randStu];
+    cardPulled=studentCards[randStu];
     console.log(cardPulled);
     stuPic.setAttribute('src', `${studentCards[randStu].cardImage}`);
     stuName.innerHTML=`${studentCards[randStu].name}`;
     objArr.push(studentCards[randStu]);
     studentCards.splice(randStu, 1);
+    console.log(objArr)
     return cardPulled;
 }
 function getRandomInt(min, maxRange) {
@@ -226,6 +292,10 @@ function render() {
     if(start) {
         document.querySelector('.startGame').style.display='none';
         document.querySelector('.dealCard').style.display='block';
+        sfCountEl.textContent=`${sfCount}`;
+        smCountEl.textContent=`${smCount}`;
+        dalCountEl.textContent=`${dalCount}`;
+        atxCountEl.textContent=`${atxCount}`;
 } else {
         document.querySelector('.startGame').style.display='block';
         document.querySelector('.dealCard').style.display='none';
@@ -239,13 +309,16 @@ function countdown(){
         if(time){
             timerTwo.textContent = `Time left: ${time}`;
             document.getElementById('stuPic').style.display='block';
+            msgEl.innerText = '';
     }else {
         clearInterval(timer);
         timerTwo.textContent = `GAME OVER`;
         document.querySelector('.startGame').style.display='block';
         document.querySelector('.dealCard').style.display='none';
         document.getElementById('stuPic').style.display='none';
-        time = 60;
+        document.getElementById('stuName').style.display='none';
+        time = 60; 
+        document.querySelector('.msg').style.display='none';
         }
     }, 1000)
 }
@@ -259,28 +332,56 @@ let button = document.querySelector('.sf');
 
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(studentCards[randStu].city === input ? "match" : "no match");
+    console.log(cardPulled);
+    if(cardPulled.city === input) {
+        sfCount++
+        sfCountEl.innerText = sfCount
+        dealCard()
+    } else {
+        msgEl.innerText = "Try again!";
+    }
 })
 
 let butsm = document.querySelector('.sm');
 
 butsm.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(studentCards[randStu].city === input ? "match" : "no match");
+    console.log(cardPulled);
+    if(cardPulled.city === input) {
+        smCount++
+        smCountEl.innerText = smCount
+        dealCard()
+    } else {
+        msgEl.innerText = "NOPE! NOPE! NOPE!";
+    }
 })
 
 let butdal = document.querySelector('.dal');
 
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(studentCards[randStu].city === input ? "match" : "no match");
+    console.log(cardPulled);
+    if(cardPulled.city === input) {
+        dalCount++
+        dalCountEl.innerText = dalCount
+        dealCard()
+    } else {
+        msgEl.innerText = "NOPE!";
+    }
 })
 
 let butatx = document.querySelector('.atx');
 
 butatx.addEventListener('click', function(evt){
-    let input = evt.srcElement.className
-    console.log(studentCards[randStu].city === input ? "match" : "no match");
+    let input = evt.srcElement.className;
+    console.log(cardPulled);
+    if(cardPulled.city === input) {
+        atxCount++
+        atxCountEl.innerText = atxCount
+        dealCard()
+    } else {
+        msgEl.innerText = "NOOOOOOO!";
+    }
 });
 
 var rs = Math.floor()

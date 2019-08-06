@@ -19,13 +19,22 @@ body {
 
 }
 #stuPic {
-    height: 350px;
-    width: 325px;
+    height: 400px;
+    width: 400px;
+    background: black;
+    background-position-x: 150vmin;
+    background-position-y: 150vmin;
 }
 #stuName {
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    color: orange;
+    background: black;
+}
+h2 {
+    background: black;
+    color: orange;
 }
 .msg {
     display: flex;
@@ -154,4 +163,52 @@ body {
     display: flex;
     justify-content: center;
     font-weight: bold;
+}
+.sfCount {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    font-weight: bold;
+    background: black;
+    color: orange;
+}
+.smCount {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    font-weight: bold;
+    background: black;
+    color: orange;
+}
+.dalCount {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    font-weight: bold;
+    background: black;
+    color: orange;
+}
+.atxCount {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    font-weight: bold;
+    background: black;
+    color: orange;
 }
