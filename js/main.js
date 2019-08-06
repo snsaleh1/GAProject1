@@ -213,15 +213,13 @@ const studentCards = [{
 }, {
     name: "Samantha Shackelford",
     city: "sf",
-    cardImage: "images/samanthashackelford.png"
+    cardImage: "images/sfsamanthashackelford.png"
 }, {
     name: "Sorrel June",
     city: "sf",
     cardImage: "images/sfsorreljune.png"
-}, {
+}
 ]
-const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
-const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koenig-1132888100.mp3');
 
 //dealCard will start off false 
 let start = false;

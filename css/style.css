@@ -19,8 +19,8 @@ body {
 
 }
 #stuPic {
-    height: 400px;
-    width: 400px;
+    height: 315px;
+    width: 300px;
     background: black;
     background-position-x: 150vmin;
     background-position-y: 150vmin;
@@ -163,6 +163,7 @@ h2 {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    font-size: 28px;
 }
 .sfCount {
     height: 50px;
