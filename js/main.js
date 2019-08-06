@@ -16,152 +16,152 @@ const studentCards = [{
     {
     name: "Dev Govindji",
     city: "atx",
-    cardImage: "image/atxdevgovindji.png"
+    cardImage: "images/atxdevgovindji.png"
 }, 
     {
     name: "Heather Etheridge",
     city: "atx",
-    cardImage: "image/atxheatheretheridge.png"
+    cardImage: "images/atxheatheretheridge.png"
 },
     {
     name: "Jack Ground",
     city: "atx",
-    cardImage: "image/atxjackground.png"
+    cardImage: "images/atxjackground.png"
 },
     {
     name: "Beverly Osoria",
     city: "atx",
-    cardImage: "image/atxbeverlyosoria"
+    cardImage: "images/atxbeverlyosoria.jpg"
 },
     {
     name: "Chris Mayfield",
     city: "atx",
-    cardImage: "image/atxchrismayfield"
+    cardImage: "images/atxchrismayfield.png"
 },
     {
     name: "Emily Landgrebe",
     city: "atx",
-    cardImage: "image/atxemilylandgrebe"
+    cardImage: "images/atxemilylandgrebe.png"
 },
     {
     name: "Jared Rodriguez",
     city: "atx",
-    cardImage: "image/atxjaredrodriguez"
+    cardImage: "images/atxjaredrodriguez.png"
 },
     {
     name: "Joe Gerhard",
     city: "atx",
-    cardImage: "image/atxjoegerhard"
+    cardImage: "images/atxjoegerhard.png"
 },
     {
     name: "Chris Williams",
     city: "atx",
-    cardImage: "image/atxchriswilliams"
+    cardImage: "images/atxchriswilliams.png"
 },
     {
     name: "David Bae",
     city: "atx",
-    cardImage: "image/atxdavidbae"
+    cardImage: "images/atxdavidbae.png"
 }, {
     name: "Francis Cancio",
     city: "atx",
-    cardImage: "image/atxfranciscancio"
+    cardImage: "images/atxfranciscancio.png"
 }, {
     name: "Nova Hasley",
     city: "atx",
-    cardImage: "image/atxnovahasley"
+    cardImage: "images/atxnovahasley.png"
 }, {
     name: "Emily Moore",
     city: "atx",
-    cardImage: "image/atxemilymoore"
+    cardImage: "images/atxemilymoore.png"
 }, {
     name: "Elco Garcia",
     city: "atx",
-    cardImage: "image/atxelcogarcia"
+    cardImage: "images/atxelcogarcia.png"
 }, {
     name: "Chris Perez",
     city: "atx",
-    cardImage: "image/atxchrisperez"
+    cardImage: "images/atxchrisperez.png"
 }, {
     name: "Taylor Lacerte",
     city: "atx",
-    cardImage: "image/atxtaylorlacerte"
+    cardImage: "images/atxtaylorlacerte.png"
 }, {
     name: "Robin Dao",
     city: "atx",
-    cardImage: "image/atxrobindao"
+    cardImage: "images/atxrobindao.png"
 }, {
     name: "Mason Pierce",
     city: "atx",
-    cardImage: "image/atxmasonpierce"
+    cardImage: "images/atxmasonpierce.png"
 }, {
     name: "Vittoria Erdem",
     city: "atx",
-    cardImage: "image/atxvittoriaerdem"
+    cardImage: "images/atxvittoriaerdem.png"
 }, {
     name: "Jeremiah Garza",
     city: "atx",
-    cardImage: "image/atxjeremiahgarza"
+    cardImage: "images/atxjeremiahgarza.png"
 }, {
     name: "Connor Mccabe",
     city: "atx",
-    cardImage: "image/atxconnormccabe"
+    cardImage: "images/atxconnormccabe.png"
 }, {
     name: "Lily Best",
     city: "atx",
-    cardImage: "image/atxlilybest"
+    cardImage: "images/atxlilybest.png"
 }, {
     name: "Julia Galan",
     city: "atx",
-    cardImage: "image/atxjuliagalan"
+    cardImage: "images/atxjuliagalan.png"
 }, {
     name: "Andrew Theismann",
     city: "dal",
-    cardImage: "image/andrewtheismann"
+    cardImage: "images/dalandrewtheismann.png"
 }, {
     name: "Beth Smith",
     city: "dal",
-    cardImage: "image/dalbethsmith"
+    cardImage: "images/dalbethsmith.png"
 }, {
     name: "Cole Holmes",
     city: "dal",
-    cardImage: "image/dalcoleholmes"
+    cardImage: "images/dalcoleholmes.png"
 }, {
     name: "Daniel Scott",
     city: "dal",
-    cardImage: "image/daldanielscott"
+    cardImage: "images/daldanielscott.png"
 }, {
     name: "James Talambas",
     city: "dal",
-    cardImage: "image/daljamestalambas"
+    cardImage: "images/daljamestalambas.png"
 }, {
     name: "Joseph Hunt",
     city: "dal",
-    cardImage: "image/daljosephhunt"
+    cardImage: "images/daljosephhunt.png"
 }, {
     name: "Phillip Avila",
     city: "dal",
-    cardImage: "image/dalphillipavila"
+    cardImage: "images/dalphillipavila.png"
 }, {
     name: "Ruben Caceres",
     city: "dal",
-    cardImage: "image/dalrubencaceres"
+    cardImage: "images/dalrubencaceres.png"
 }, {
     name: "Ryan George",
     city: "dal",
-    cardImage: "image/dalryangeorge"
+    cardImage: "images/dalryangeorge.png"
 }, {
     name: "Sam Gathoni",
     city: "dal",
-    cardImage: "image/dalsamgathoni"
+    cardImage: "images/dalsamgathoni.png"
 }, {
     name: "Michael Martinez",
     city: "dal",
-    cardImage: "image/dalmichaelmartinez"
+    cardImage: "images/dalmichaelmartinez.png"
 }, {
     name: "Michael Hinte",
     city: "dal",
-    cardImage: "image/dalmichaelhinte"
+    cardImage: "images/dalmichaelhinte.png"
 }
 ]
 const beepAudio = new Audio('http://soundbible.com/mp3/Robot_blip-Marianne_Gagnon-120342607.mp3');
@@ -171,10 +171,12 @@ const shootAudio = new Audio('http://soundbible.com/mp3/shooting_star-Mike_Koeni
 let start = false;
 
 /*----- app's state (variables) -----*/
-let cityCounts, timer, winner, time, randStu;
+let cityCounts, timer, winner, time, randStu, score;
 
 /*----- cached element references -----*/
-
+let picSpot = document.getElementById("placeHolder");
+let stuPic = document.getElementById("stuPic");
+let stuName = document.getElementById("stuName");
 
 /*----- event listeners -----*/
 document.querySelector('.dealCard')
@@ -187,18 +189,18 @@ document.querySelector('.startGame')
 
 console.log(Object.keys(studentCards));
 
-
 function dealCard() {
     let maxRange = studentCards.length;
     let objArr = [];
-    randStu = getRandomInt (0, maxRange);
-    console.log(randStu);
+    randStu = Math.floor(Math.random() * maxRange);
+    console.log(randStu ,maxRange)
     let cardPulled=studentCards[randStu];
+    console.log(cardPulled);
+    stuPic.setAttribute('src', `${studentCards[randStu].cardImage}`);
+    stuName.innerHTML=`${studentCards[randStu].name}`;
     objArr.push(studentCards[randStu]);
     studentCards.splice(randStu, 1);
-    maxRange --;
     return cardPulled;
-
 }
 function getRandomInt(min, maxRange) {
     min = Math.ceil(min);
@@ -212,6 +214,12 @@ function startGame(){
     time = 60;
     countdown();
     render();
+}
+
+function getStudImage(idx){
+    let studImage = studentCards[idx].cardImage;
+    console.log(studImage);
+    return studImage;
 }
 
 function render() {
@@ -230,11 +238,13 @@ function countdown(){
         time--;
         if(time){
             timerTwo.textContent = `Time left: ${time}`;
+            document.getElementById('stuPic').style.display='block';
     }else {
         clearInterval(timer);
         timerTwo.textContent = `GAME OVER`;
         document.querySelector('.startGame').style.display='block';
         document.querySelector('.dealCard').style.display='none';
+        document.getElementById('stuPic').style.display='none';
         time = 60;
         }
     }, 1000)
@@ -263,11 +273,11 @@ let butdal = document.querySelector('.dal');
 
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    // console.log(typeof input)
     console.log(studentCards[randStu].city === input ? "match" : "no match");
 })
 
 let butatx = document.querySelector('.atx');
+
 butatx.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(studentCards[randStu].city === input ? "match" : "no match");
