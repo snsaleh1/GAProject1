@@ -268,6 +268,7 @@ let dalCountEl = document.querySelector('.dalCount');
 let atxCountEl = document.querySelector('.atxCount');
 let msgEl = document.querySelector('.msg');
 let msgElTwo = document.querySelector('.msgTwo');
+let resButEl = document.querySelector('.resBut');
 
 /*----- event listeners -----*/
 document.querySelector('.dealCard')
@@ -339,10 +340,10 @@ function countdown(){
             document.getElementById('stuPic').style.display='block';
             msgEl.innerText = '';
             setTimeout (msgEl.innerText, 1000);
-            document.querySelector('.msgTwo').style.display='none';
+            document.querySelector('.msgTwo').style.display='block';
         }else {
             clearInterval(timer);
-            timerTwo.textContent = `GAME OVER`;
+            timerTwo.textContent = `You ran out of Time!`;
             document.querySelector('.startGame').style.display='block';
             document.querySelector('.dealCard').style.display='none';
             document.getElementById('stuPic').style.display='none';
@@ -357,8 +358,9 @@ function countdown(){
 function gameOver(){
     document.querySelector('.startGame').style.display='block';
     document.querySelector('.dealCard').style.display='none';
+    msgEl.innerHTML="HEY...THANKS FOR PLAYING!";
+    document.querySelector('.resBut').style.display='none';
     clearInterval(timer);
-    msgElTwo.innerText="HEY...THANKS FOR PLAYING!";
 }
 
 let button = document.querySelector('.sf');
@@ -366,9 +368,12 @@ let button = document.querySelector('.sf');
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(cardPulled);
-    if (sfCount === 9) {
+    if (sfCount === 7) {
         console.log("text");
         msgEl.innerText="GOLDEN LIKE THE GATE BRIDGE!";
+        confetti.start(5000);
+        document.getElementById('stuPic').style.display='none';
+        document.getElementById('stuName').style.display='none';
         gameOver();
     }
     else if (cardPulled.city === input) {
@@ -388,6 +393,9 @@ butsm.addEventListener('click', function(evt){
     if (smCount === 5) {
         console.log("text");
         msgEl.innerText="HOIST UP THE JOHN B SAILS!";
+        confetti.start(5000);
+        document.getElementById('stuPic').style.display='none';
+        document.getElementById('stuName').style.display='none';
         gameOver();
     }
     else if (cardPulled.city === input) {
@@ -404,9 +412,12 @@ let butdal = document.querySelector('.dal');
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(cardPulled);
-    if (dalCount === 9) {
+    if (dalCount === 7) {
         console.log("text");
         msgEl.innerText="BIGGER WINS IN TEXAS, Y'ALL!";
+        confetti.start(5000);
+        document.getElementById('stuPic').style.display='none';
+        document.getElementById('stuName').style.display='none';
         gameOver();
     }
     else if (cardPulled.city === input) {
@@ -426,7 +437,9 @@ butatx.addEventListener('click', function(evt){
     if (atxCount === 9) {
         console.log("text");
         msgEl.innerText="BETTA THAN BBQ, YOU IS! -YODA";
-        confetti.start(Infinity);
+        confetti.start(5000);
+        document.getElementById('stuPic').style.display='none';
+        document.getElementById('stuName').style.display='none';
         gameOver();
     }
     if (cardPulled.city === input) {
