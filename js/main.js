@@ -306,7 +306,7 @@ function getRandomInt(min, maxRange) {
 function startGame(){
     let firstCard = getRandomInt(0, studentCards.length);
     start = true;
-    time = 10;
+    time = 60;
     countdown();
     render();
 }
