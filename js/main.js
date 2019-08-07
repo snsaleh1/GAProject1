@@ -306,7 +306,7 @@ function getRandomInt(min, maxRange) {
 function startGame(){
     let firstCard = getRandomInt(0, studentCards.length);
     start = true;
-    time = 60;
+    time = 10;
     countdown();
     render();
 }
@@ -339,27 +339,29 @@ function countdown(){
             timerTwo.textContent = `Time left: ${time}`;
             document.getElementById('stuPic').style.display='block';
             msgEl.innerText = '';
-            setTimeout (msgEl.innerText, 1000);
+            setTimeout (msgEl.innerText, 3000);
             document.querySelector('.msgTwo').style.display='block';
+            document.querySelector('.resBut').style.display='none';
         }else {
             clearInterval(timer);
             timerTwo.textContent = `You ran out of Time!`;
-            document.querySelector('.startGame').style.display='block';
+            document.querySelector('.startGame').style.display='none';
             document.querySelector('.dealCard').style.display='none';
             document.getElementById('stuPic').style.display='none';
             document.getElementById('stuName').style.display='none';
             document.querySelector('.msgTwo').style.display='block';
             document.querySelector('.msg').style.display='none';
+            document.querySelector('.resBut').style.display='block';
             time = 60; 
     }
 }, 1000)
 }
 
 function gameOver(){
+    document.querySelector('.resBut').style.display='block';
     document.querySelector('.startGame').style.display='none';
     document.querySelector('.dealCard').style.display='none';
     msgEl.innerHTML="HEY...THANKS FOR PLAYING!";
-    document.querySelector('.resBut').style.display='none';
     clearInterval(timer);
 }
 
@@ -381,7 +383,7 @@ button.addEventListener('click', function(evt){
         sfCountEl.innerText = sfCount
         dealCard()
     } else {
-    msgEl.innerText = "HAHA NOPE!";
+        setTimeout (msgEl.innerText = "HAHA NOPE!", 3000);
     } 
 })
 
@@ -403,7 +405,7 @@ butsm.addEventListener('click', function(evt){
         smCountEl.innerText = smCount
         dealCard()
     } else {
-    msgEl.innerText = "YOU DON'T DESERVE THE BEACH!";
+        setTimeout (msgEl.innerText = "YOU DON'T DESERVE THE BEACH!", 3000);
     } 
 })
 
@@ -425,7 +427,7 @@ butdal.addEventListener('click', function(evt){
         dalCountEl.innerText = dalCount
         dealCard()
     } else {
-    msgEl.innerText = "TRY AGAIN, FOOL!";
+        msgEl.innerText = "TRY AGAIN, FOOL!"    
     } 
 })
 
@@ -447,7 +449,7 @@ butatx.addEventListener('click', function(evt){
         atxCountEl.innerText = atxCount
         dealCard()
     } else {
-    msgEl.innerText = "NOOOOOOOOOOOOOO!!!";
+        setTimeout(msgEl.innerText = "NOOOOOOOOOOOOOO!!!", 3000);
     } 
 })
 
