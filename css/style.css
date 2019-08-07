@@ -9,7 +9,9 @@ h1 {
 body {
     display: flex;
     flex-direction: column;
-    background: url(https://i.imgur.com/ocaZjTY.jpg);
+    background-color: #006666;
+    background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+    /* background: url(https://i.imgur.com/ocaZjTY.jpg); */
 }
 #picSpot {
     display: flex;
@@ -20,13 +22,13 @@ body {
 }
 #stuPic {
     height: 315px;
-    width: 300px;
+    width: 315px;
     background: black;
     background-position-x: 150vmin;
     background-position-y: 150vmin;
 }
 #stuName {
-    font-size: 24px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: orange;
@@ -37,12 +39,22 @@ h2 {
     background: black;
     background-position-x: center;    
     color: orange;
-    font-size: 18px;
+    font-size: 16px;
 }
 .msg {
     display: flex;
     justify-content: center;
 }
+.msgTwo {
+    display: flex;
+    justify-content: center;
+}
+.resBut {
+    height: 100px;
+    width: 200px;
+    font-size: 22px;
+}
+
 .circleOne {
     content: ' \25CF';
     font-size: 80px;
