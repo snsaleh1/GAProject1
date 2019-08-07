@@ -35,6 +35,7 @@ body {
 h2 {
     background: black;
     color: orange;
+    font-size: 18px;
 }
 .msg {
     display: flex;

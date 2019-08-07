@@ -155,6 +155,10 @@ const studentCards = [{
     city: "dal",
     cardImage: "images/dalsamgathoni.png"
 }, {
+    name: "Kevinn Arbas",
+    city: "dal",
+    cardImage: "images/dalkevinnarbas.png"
+}, {
     name: " Michael Martinez ",
     city: "dal",
     cardImage: "images/dalmichaelmartinez.png"
@@ -218,7 +222,35 @@ const studentCards = [{
     name: "Sorrel June",
     city: "sf",
     cardImage: "images/sfsorreljune.png"
-}
+}, {
+    name: "Dave Koncsol",
+    city: "sm",
+    cardImage: "images/smdavekoncsol.png"
+}, {
+    name: "Jomar Mendoza",
+    city: "sm",
+    cardImage: "images/smjomarmendoza.png"
+}, {
+    name: "Michelle Cohen",
+    city: "sm",
+    cardImage: "images/smmichellecohen.png"
+}, {
+    name: "Muhammed Qadan",
+    city: "sm",
+    cardImage: "images/smmuhammedqadan.png"
+}, {
+    name: "Victor Gonzalez",
+    city: "sm",
+    cardImage: "images/smvictorgonzalez.png"
+}, {
+    name: "Amandeep Nijjar",
+    city: "sm",
+    cardImage: "images/smamandeepnijjar.png"
+}, {
+    name: "Leonel Rosales",
+    city: "sm",
+    cardImage: "images/smleonelrosales.png"
+},
 ]
 
 //dealCard will start off false 
@@ -324,6 +356,11 @@ function countdown(){
 function gameOver(){
     document.querySelector('.startGame').style.display='block';
     document.querySelector('.dealCard').style.display='none';
+    if(sfCount === 10)
+    // return msgEl.innerHTML = "winner!";
+    if(smCount === 5);
+    if(dalCount === 10);
+    if(atxCount === 10);
 }
 
 let button = document.querySelector('.sf');
