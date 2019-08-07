@@ -57,11 +57,6 @@ const studentCards = [{
     name: " Chris Williams ", 
     city: "atx",
     cardImage: "images/atxchriswilliams.png"
-},
-    {
-    name: " David Bae ",
-    city: "atx",
-    cardImage: "images/atxdavidbae.png"
 }, {
     name: " Francis Cancio ",
     city: "atx",
@@ -262,7 +257,7 @@ let sfCount = 0;
 let smCount = 0;
 let dalCount = 0;
 let atxCount = 0;
-
+let objArr = [];
 /*----- cached element references -----*/
 let picSpot = document.getElementById("placeHolder");
 let stuPic = document.getElementById("stuPic");
@@ -272,6 +267,7 @@ let smCountEl = document.querySelector('.smCount');
 let dalCountEl = document.querySelector('.dalCount');
 let atxCountEl = document.querySelector('.atxCount');
 let msgEl = document.querySelector('.msg');
+let msgElTwo = document.querySelector('.msgTwo');
 
 /*----- event listeners -----*/
 document.querySelector('.dealCard')
@@ -286,7 +282,6 @@ console.log(Object.keys(studentCards));
 
 function dealCard() {
     let maxRange = studentCards.length;
-    let objArr = [];
     randStu = Math.floor(Math.random() * maxRange);
     console.log(randStu ,maxRange)
     cardPulled=studentCards[randStu];
@@ -296,6 +291,9 @@ function dealCard() {
     objArr.push(studentCards[randStu]);
     studentCards.splice(randStu, 1);
     console.log(objArr)
+    if (studentCards.length === 0){
+        gameOver();
+    }
     return cardPulled;
 }
 function getRandomInt(min, maxRange) {
@@ -326,7 +324,7 @@ function render() {
         smCountEl.textContent=`${smCount}`;
         dalCountEl.textContent=`${dalCount}`;
         atxCountEl.textContent=`${atxCount}`;
-} else {
+    } else {
         document.querySelector('.startGame').style.display='block';
         document.querySelector('.dealCard').style.display='none';
     }
@@ -340,27 +338,27 @@ function countdown(){
             timerTwo.textContent = `Time left: ${time}`;
             document.getElementById('stuPic').style.display='block';
             msgEl.innerText = '';
-    }else {
-        clearInterval(timer);
-        timerTwo.textContent = `GAME OVER`;
-        document.querySelector('.startGame').style.display='block';
-        document.querySelector('.dealCard').style.display='none';
-        document.getElementById('stuPic').style.display='none';
-        document.getElementById('stuName').style.display='none';
-        time = 60; 
-        document.querySelector('.msg').style.display='none';
-        }
-    }, 1000)
+            setTimeout (msgEl.innerText, 1000);
+            document.querySelector('.msgTwo').style.display='none';
+        }else {
+            clearInterval(timer);
+            timerTwo.textContent = `GAME OVER`;
+            document.querySelector('.startGame').style.display='block';
+            document.querySelector('.dealCard').style.display='none';
+            document.getElementById('stuPic').style.display='none';
+            document.getElementById('stuName').style.display='none';
+            document.querySelector('.msgTwo').style.display='block';
+            document.querySelector('.msg').style.display='none';
+            time = 60; 
+    }
+}, 1000)
 }
 
 function gameOver(){
     document.querySelector('.startGame').style.display='block';
     document.querySelector('.dealCard').style.display='none';
-    if(sfCount === 10)
-    // return msgEl.innerHTML = "winner!";
-    if(smCount === 5);
-    if(dalCount === 10);
-    if(atxCount === 10);
+    clearInterval(timer);
+    msgElTwo.innerText="HEY...THANKS FOR PLAYING!";
 }
 
 let button = document.querySelector('.sf');
@@ -368,13 +366,18 @@ let button = document.querySelector('.sf');
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(cardPulled);
-    if(cardPulled.city === input) {
+    if (sfCount === 9) {
+        console.log("text");
+        msgEl.innerText="GOLDEN LIKE THE GATE BRIDGE!";
+        gameOver();
+    }
+    else if (cardPulled.city === input) {
         sfCount++
         sfCountEl.innerText = sfCount
         dealCard()
     } else {
-        msgEl.innerText = "Try again!";
-    }
+    msgEl.innerText = "HAHA NOPE!";
+    } 
 })
 
 let butsm = document.querySelector('.sm');
@@ -382,13 +385,18 @@ let butsm = document.querySelector('.sm');
 butsm.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(cardPulled);
-    if(cardPulled.city === input) {
+    if (smCount === 5) {
+        console.log("text");
+        msgEl.innerText="HOIST UP THE JOHN B SAILS!";
+        gameOver();
+    }
+    else if (cardPulled.city === input) {
         smCount++
         smCountEl.innerText = smCount
         dealCard()
     } else {
-        msgEl.innerText = "NOPE! NOPE! NOPE!";
-    }
+    msgEl.innerText = "YOU DON'T DESERVE THE BEACH!";
+    } 
 })
 
 let butdal = document.querySelector('.dal');
@@ -396,28 +404,39 @@ let butdal = document.querySelector('.dal');
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(cardPulled);
-    if(cardPulled.city === input) {
+    if (dalCount === 9) {
+        console.log("text");
+        msgEl.innerText="BIGGER WINS IN TEXAS, Y'ALL!";
+        gameOver();
+    }
+    else if (cardPulled.city === input) {
         dalCount++
         dalCountEl.innerText = dalCount
         dealCard()
     } else {
-        msgEl.innerText = "NOPE!";
-    }
+    msgEl.innerText = "TRY AGAIN, FOOL!";
+    } 
 })
 
 let butatx = document.querySelector('.atx');
 
 butatx.addEventListener('click', function(evt){
-    let input = evt.srcElement.className;
+    let input = evt.srcElement.className
     console.log(cardPulled);
-    if(cardPulled.city === input) {
+    if (atxCount === 9) {
+        console.log("text");
+        msgEl.innerText="BETTA THAN BBQ, YOU IS! -YODA";
+        confetti.start(Infinity);
+        gameOver();
+    }
+    if (cardPulled.city === input) {
         atxCount++
         atxCountEl.innerText = atxCount
         dealCard()
     } else {
-        msgEl.innerText = "NOOOOOOO!";
-    }
-});
+    msgEl.innerText = "NOOOOOOOOOOOOOO!!!";
+    } 
+})
 
 var rs = Math.floor()
 render();
