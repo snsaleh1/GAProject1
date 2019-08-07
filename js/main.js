@@ -370,7 +370,7 @@ let button = document.querySelector('.sf');
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
     console.log(cardPulled);
-    if (sfCount === 7) {
+    if (sfCount === 8) {
         console.log("text");
         msgEl.innerText="GOLDEN LIKE THE GATE BRIDGE!";
         confetti.start(5000);
