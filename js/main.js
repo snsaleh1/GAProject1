@@ -339,7 +339,6 @@ function countdown(){
             document.getElementById('stuPic').style.display='block';
             msgEl.innerText = '';
             setTimeout (msgEl.innerText, 1000);
-            document.querySelector('.msgTwo').style.display='none';
         }else {
             clearInterval(timer);
             timerTwo.textContent = `GAME OVER`;
@@ -355,7 +354,7 @@ function countdown(){
 }
 
 function gameOver(){
-    document.querySelector('.startGame').style.display='block';
+    document.querySelector('.startGame').style.display='none';
     document.querySelector('.dealCard').style.display='none';
     clearInterval(timer);
     msgElTwo.innerText="HEY...THANKS FOR PLAYING!";
