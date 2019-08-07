@@ -33,7 +33,9 @@ body {
     background: black;
 }
 h2 {
+    display: flex;
     background: black;
+    background-position-x: center;    
     color: orange;
     font-size: 18px;
 }
