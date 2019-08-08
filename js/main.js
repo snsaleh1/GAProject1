@@ -8,114 +8,122 @@ const soundFive = new Audio('sounds/applause.wav');
 const soundSix = new Audio('sounds/awww.wav');
 //variable.play();
 const studentCards = [{
-    name: " Caleb Saleh ",
+    name: 'Ben "So" Manley',
+    city: "atx",
+    cardImage: "images/atxbensomanley.png"
+}, {
+    name: ' Caleb "Zeus" Saleh ',
     city: "atx",
     cardImage: "images/atxcalebsaleh.png"
 }, {
-    name: " David Bae ",
+    name: ' David "DJ BAE" Bae ',
     city: "atx",
     cardImage: "images/atxdavidbae.png"
 },  {
-    name: " Chighali Mouknass ",
+    name: ' Chighali "Deep Blue Cee" Mouknass ',
     city: "atx",
     cardImage: "images/atxchighalimouknass.png"
 },
     {
-    name: " Dev Govindji ",
+    name: ' Dev "Tools" Govindji ',
     city: "atx",
     cardImage: "images/atxdevgovindji.png"
 }, 
     {
-    name: " Heather Etheridge ",
+    name: ' Heather "Spitfire" Etheridge ',
     city: "atx",
     cardImage: "images/atxheatheretheridge.png"
 },
     {
-    name: " Jack Ground ",
+    name: ' Jack "Super Pound" Ground ',
     city: "atx",
     cardImage: "images/atxjackground.png"
 },
     {
-    name: " Beverly Osoria ",
+    name: ' Beverly "Wonder Woman" Osoria ',
     city: "atx",
     cardImage: "images/atxbeverlyosoria.jpg"
 },
     {
-    name: " Chris Mayfield ",
+    name: ' Chris "The Plow" Mayfield ',
     city: "atx",
     cardImage: "images/atxchrismayfield.png"
 },
     {
-    name: " Emily Landgrebe ",
+    name: ' Emily "Rave" Landgrebe ',
     city: "atx",
     cardImage: "images/atxemilylandgrebe.png"
 },
     {
-    name: " Jared Rodriguez ",
+    name: ' Jared "J-Rock" Rodriguez ',
     city: "atx",
     cardImage: "images/atxjaredrodriguez.png"
 },
     {
-    name: " Joe Gerhard ",
+    name: ' "Smokin" Joe Gerhard ',
     city: "atx",
     cardImage: "images/atxjoegerhard.png"
 },
     {
-    name: " Chris Williams ", 
+    name: ' "Uncle" Chris Williams ', 
     city: "atx",
     cardImage: "images/atxchriswilliams.png"
 }, {
-    name: " Francis Cancio ",
+    name: ' Francis "Caliente" Cancio ',
     city: "atx",
     cardImage: "images/atxfranciscancio.png"
 }, {
-    name: " Nova Hasley ",
+    name: ' "Super" Nova Hasley ',
     city: "atx",
     cardImage: "images/atxnovahasley.png"
 }, {
-    name: " Emily Moore ",
+    name: ' Emily "The People Want" Moore ',
     city: "atx",
     cardImage: "images/atxemilymoore.png"
 }, {
-    name: " Elco Garcia ",
+    name: ' Elco "Game Time" Garcia ',
     city: "atx",
     cardImage: "images/atxelcogarcia.png"
 }, {
-    name: " Chris Perez ",
+    name: ' Chris "The Flash" Perez ',
     city: "atx",
     cardImage: "images/atxchrisperez.png"
 }, {
-    name: " Taylor Lacerte ",
+    name: ' Taylor "Twilight" Lacerte ',
     city: "atx",
     cardImage: "images/atxtaylorlacerte.png"
 }, {
-    name: " Robin Dao ",
+    name: ' Robin "Cookie Boom Boom" Dao ',
     city: "atx",
     cardImage: "images/atxrobindao.png"
 }, {
-    name: " Mason Pierce ",
+    name: ' Mason "Where you at" Pierce ',
     city: "atx",
     cardImage: "images/atxmasonpierce.png"
 }, {
-    name: " Vittoria Erdem ",
+    name: ' Vittoria "THE BUCKEYE" Erdem ',
     city: "atx",
     cardImage: "images/atxvittoriaerdem.png"
 }, {
-    name: " Jeremiah Garza ",
+    name: ' Jeremiah "The General" Garza ',
     city: "atx",
     cardImage: "images/atxjeremiahgarza.png"
 }, {
-    name: " Connor Mccabe ",
+    name: ' Connor "Bushmills" Mccabe ',
     city: "atx",
     cardImage: "images/atxconnormccabe.png"
 }, {
-    name: " Lily Best ",
+    name: ' Lily "Better than yours" Best ',
     city: "atx",
     cardImage: "images/atxlilybest.png"
 }, {
-    name: " Julia Galan ",
+    name: ' Julia "Brown Eyed Girl" Galan ',
     city: "atx",
     cardImage: "images/atxjuliagalan.png"
+}, {
+    name: ' Ben "So" Manley',
+    city: "atx",
+    cardImage: "images/atxbensomanley.png"
 }, {
     name: " Andrew Theismann ",
     city: "dal",
@@ -161,6 +169,10 @@ const studentCards = [{
     city: "dal",
     cardImage: "images/dalkevinnarbas.png"
 }, {
+    name: "Armando Samperio",
+    city: "dal",
+    cardImage: "images/dalarmandosamperio.png"
+}, {
     name: " Michael Martinez ",
     city: "dal",
     cardImage: "images/dalmichaelmartinez.png"
@@ -172,6 +184,10 @@ const studentCards = [{
     name: "Aly Nguyen",
     city: "sf",
     cardImage: "images/sfalynguyen.png"
+}, {
+    name: "Sonnia Kemmer",
+    city: "sf",
+    cardImage: "images/sfsonniakemmer.png"
 }, {
     name: "Anami",
     city: "sf",
@@ -217,6 +233,10 @@ const studentCards = [{
     city: "sf",
     cardImage: "images/sfprestonhom.png"
 }, {
+    name: "Allen Wright",
+    city: "sf",
+    cardImage: "images/sfallenwright.png"
+}, {
     name: "Samantha Shackelford",
     city: "sf",
     cardImage: "images/sfsamanthashackelford.png"
@@ -229,6 +249,10 @@ const studentCards = [{
     city: "sm",
     cardImage: "images/smdavekoncsol.png"
 }, {
+    name: "Claire Preising",
+    city: "sm",
+    cardImage: "images/smclairepreising.png"
+}, {
     name: "Jomar Mendoza",
     city: "sm",
     cardImage: "images/smjomarmendoza.png"
@@ -240,6 +264,10 @@ const studentCards = [{
     name: "Muhammed Qadan",
     city: "sm",
     cardImage: "images/smmuhammedqadan.png"
+}, {
+    name: "Alexander Rowland",
+    city: "sm",
+    cardImage: "images/smalexanderrowland.png"
 }, {
     name: "Victor Gonzalez",
     city: "sm",
@@ -351,7 +379,7 @@ function countdown(){
             document.querySelector('.resBut').style.display='none';
         }else {
             clearInterval(timer);
-            timerTwo.textContent = `You ran out of Time!`;
+            timerTwo.textContent = `You LITERALLY had one job!`;
             document.querySelector('.startGame').style.display='none';
             document.querySelector('.dealCard').style.display='none';
             document.getElementById('stuPic').style.display='none';
@@ -377,21 +405,20 @@ let button = document.querySelector('.sf');
 
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    if (sfCount === 8) {
-        msgElTwo.innerText="HELLA GOLDEN LIKE THE GATE BRIDGE!";
-        confetti.start(5000);
+    if (sfCount === 7) {
+        msgElTwo.innerText="HELLA GOLDEN LIKE THAT GATE BRIDGE!";
+        confetti.start(9000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
         soundFive.play();
         gameOver();
-    }
-    if (cardPulled.city === input) {
-        sfCount++
-        sfCountEl.innerText = sfCount
-        dealCard()
+    }if (cardPulled.city === input) {
+        sfCount++;
+        sfCountEl.innerText = sfCount;
+        dealCard();
     } else {
         soundFour.play();
-        setTimeout (msgEl.innerText = "HAHA NOPE!", 3000);
+        msgEl.innerText = "HAHA NOPE!";
     } 
 })
 
@@ -399,21 +426,20 @@ let butsm = document.querySelector('.sm');
 
 butsm.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    if (smCount === 5) {
+    if (smCount === 4) {
         msgElTwo.innerText="SICK GNARLY, BRAH!";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
         soundFive.play();
         gameOver();
-    }
-    if (cardPulled.city === input) {
-        smCount++
-        smCountEl.innerText = smCount
-        dealCard()
-    } else {
+    } if (cardPulled.city === input) {
+        smCount++;
+        smCountEl.innerText = smCount;
+        dealCard();
+    } else{ 
         soundTwo.play();
-        setTimeout (msgEl.innerText = "YOU DON'T DESERVE THE BEACH!", 3000);
+        msgEl.innerText = "YOU DON'T DESERVE THE BEACH!";
     } 
 })
 
@@ -421,21 +447,20 @@ let butdal = document.querySelector('.dal');
 
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    if (dalCount === 7) {
+     if (dalCount === 7) {
         msgElTwo.innerText="CAUSE BIGGER WINS IN TEXAS, Y'ALL!";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
         soundFive.play();
         gameOver();
-    }
-    if (cardPulled.city === input) {
-        dalCount++
-        dalCountEl.innerText = dalCount
-        dealCard()
+    } if (cardPulled.city === input) {
+        dalCount++;
+        dalCountEl.innerText = dalCount;
+        dealCard();
     } else {
         soundOne.play();
-        setTimeout (msgEl.innerText = "TRY AGAIN, FOOL!", 3000);   
+        msgEl.innerText = "TRY AGAIN, FOOL!";   
     } 
 })
 
@@ -450,14 +475,13 @@ butatx.addEventListener('click', function(evt){
         document.getElementById('stuName').style.display='none';
         soundFive.play();
         gameOver();
-    }
-    if (cardPulled.city === input) {
-        atxCount++
-        atxCountEl.innerText = atxCount
-        dealCard()
+    } if (cardPulled.city === input) {
+        atxCount++;
+        atxCountEl.innerText = atxCount;
+        dealCard();
     } else {
         soundThree.play();
-        setTimeout(msgEl.innerText = "NOOOOOOOOOOOOOO!!!", 3000);
+        msgEl.innerText = "NOOOOOOOOOOOOOO!!!";
     } 
 })
 
