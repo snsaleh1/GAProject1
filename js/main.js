@@ -1,5 +1,12 @@
 //Rep Your City Game
 /*----- constants -----*/
+const soundOne =  new Audio("sounds/wrong.mp3");
+const soundTwo = new Audio('sounds/nope.ogg');
+const soundThree = new Audio('sounds/haha.aiff');
+const soundFour = new Audio('sounds/furby.wav');
+const soundFive = new Audio('sounds/applause.wav');
+const soundSix = new Audio('sounds/awww.wav');
+//variable.play();
 const studentCards = [{
     name: " Caleb Saleh ",
     city: "atx",
@@ -352,6 +359,7 @@ function countdown(){
             document.querySelector('.msgTwo').style.display='block';
             document.querySelector('.msg').style.display='none';
             document.querySelector('.resBut').style.display='block';
+            soundSix.play();
             time = 60; 
     }
 }, 1000)
@@ -361,7 +369,7 @@ function gameOver(){
     document.querySelector('.resBut').style.display='block';
     document.querySelector('.startGame').style.display='none';
     document.querySelector('.dealCard').style.display='none';
-    msgEl.innerHTML="HEY...THANKS FOR PLAYING!";
+    msgEl.innerHTML="WELL DONE, YOU BEAUTY!";
     clearInterval(timer);
 }
 
@@ -369,20 +377,20 @@ let button = document.querySelector('.sf');
 
 button.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(cardPulled);
     if (sfCount === 8) {
-        console.log("text");
-        msgEl.innerText="GOLDEN LIKE THE GATE BRIDGE!";
+        msgElTwo.innerText="HELLA GOLDEN LIKE THE GATE BRIDGE!";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
+        soundFive.play();
         gameOver();
     }
-    else if (cardPulled.city === input) {
+    if (cardPulled.city === input) {
         sfCount++
         sfCountEl.innerText = sfCount
         dealCard()
     } else {
+        soundFour.play();
         setTimeout (msgEl.innerText = "HAHA NOPE!", 3000);
     } 
 })
@@ -391,20 +399,20 @@ let butsm = document.querySelector('.sm');
 
 butsm.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(cardPulled);
     if (smCount === 5) {
-        console.log("text");
-        msgEl.innerText="HOIST UP THE JOHN B SAILS!";
+        msgElTwo.innerText="SICK GNARLY, BRAH!";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
+        soundFive.play();
         gameOver();
     }
-    else if (cardPulled.city === input) {
+    if (cardPulled.city === input) {
         smCount++
         smCountEl.innerText = smCount
         dealCard()
     } else {
+        soundTwo.play();
         setTimeout (msgEl.innerText = "YOU DON'T DESERVE THE BEACH!", 3000);
     } 
 })
@@ -413,21 +421,21 @@ let butdal = document.querySelector('.dal');
 
 butdal.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(cardPulled);
     if (dalCount === 7) {
-        console.log("text");
-        msgEl.innerText="BIGGER WINS IN TEXAS, Y'ALL!";
+        msgElTwo.innerText="CAUSE BIGGER WINS IN TEXAS, Y'ALL!";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
+        soundFive.play();
         gameOver();
     }
-    else if (cardPulled.city === input) {
+    if (cardPulled.city === input) {
         dalCount++
         dalCountEl.innerText = dalCount
         dealCard()
     } else {
-        msgEl.innerText = "TRY AGAIN, FOOL!"    
+        soundOne.play();
+        setTimeout (msgEl.innerText = "TRY AGAIN, FOOL!", 3000);   
     } 
 })
 
@@ -435,13 +443,12 @@ let butatx = document.querySelector('.atx');
 
 butatx.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    console.log(cardPulled);
     if (atxCount === 9) {
-        console.log("text");
-        msgEl.innerText="BETTA THAN BBQ, YOU IS! -YODA";
+        msgElTwo.innerText="CAUSE BETTA THAN BBQ, YOU IS! -YODA";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
         document.getElementById('stuName').style.display='none';
+        soundFive.play();
         gameOver();
     }
     if (cardPulled.city === input) {
@@ -449,6 +456,7 @@ butatx.addEventListener('click', function(evt){
         atxCountEl.innerText = atxCount
         dealCard()
     } else {
+        soundThree.play();
         setTimeout(msgEl.innerText = "NOOOOOOOOOOOOOO!!!", 3000);
     } 
 })

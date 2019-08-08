@@ -21,8 +21,8 @@ body {
 
 }
 #stuPic {
-    height: 315px;
-    width: 315px;
+    height: 275px;
+    width: 275px;
     background: black;
     background-position-x: 150vmin;
     background-position-y: 150vmin;
@@ -48,11 +48,16 @@ h2 {
 .msgTwo {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .resBut {
     height: 100px;
     width: 200px;
     font-size: 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    background: black;
+    color: orange;
 }
 
 .circleOne {
@@ -167,12 +172,19 @@ h2 {
     height: 100px;
     width: 200px;
     font-size: 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    background: black;
+    color: orange;
 }
 .dealCard {
-    /* display: none; */
     height: 100px;
     width: 200px;
     font-size: 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    background: black;
+    color: orange;
 }
 .timer {
     display: flex;
