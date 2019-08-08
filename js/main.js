@@ -20,7 +20,7 @@ const studentCards = [{
     city: "atx",
     cardImage: "images/atxdavidbae.png"
 },  {
-    name: ' Chighali "Deep Blue Cee" Mouknass ',
+    name: ' Chighali "Alboran Cee" Mouknass ',
     city: "atx",
     cardImage: "images/atxchighalimouknass.png"
 },
@@ -96,10 +96,6 @@ const studentCards = [{
     name: ' Robin "Cookie Boom Boom" Dao ',
     city: "atx",
     cardImage: "images/atxrobindao.png"
-}, {
-    name: ' Mason "Where you at" Pierce ',
-    city: "atx",
-    cardImage: "images/atxmasonpierce.png"
 }, {
     name: ' Vittoria "THE BUCKEYE" Erdem ',
     city: "atx",
