@@ -9,9 +9,11 @@ h1 {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #006666;
+    background-image: url(https://i.imgur.com/z51BVK1.jpg);
+    /* background-image: url(https://i.imgur.com/7m0r79s.jpg); */
+    /* background-color: #006666;
     background-image: url("https://www.transparenttextures.com/patterns/felt.png");
-    /* background: url(https://i.imgur.com/ocaZjTY.jpg); */
+    background: url(https://i.imgur.com/ocaZjTY.jpg); */
 }
 #picSpot {
     display: flex;

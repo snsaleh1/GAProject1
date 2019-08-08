@@ -1,8 +1,8 @@
 //Rep Your City Game
 /*----- constants -----*/
 const soundOne =  new Audio("sounds/wrong.mp3");
-const soundTwo = new Audio('sounds/nope.ogg');
-const soundThree = new Audio('sounds/haha.aiff');
+const soundTwo = new Audio('sounds/wowman.wav');
+const soundThree = new Audio('sounds/uhoh.wav');
 const soundFour = new Audio('sounds/furby.wav');
 const soundFive = new Audio('sounds/applause.wav');
 const soundSix = new Audio('sounds/awww.wav');
@@ -20,7 +20,7 @@ const studentCards = [{
     city: "atx",
     cardImage: "images/atxdavidbae.png"
 },  {
-    name: ' Chighali "Alboran Cee" Mouknass ',
+    name: ' Chighali "Cee Class" Mouknass ',
     city: "atx",
     cardImage: "images/atxchighalimouknass.png"
 },
@@ -69,7 +69,7 @@ const studentCards = [{
     city: "atx",
     cardImage: "images/atxchriswilliams.png"
 }, {
-    name: ' Francis "Caliente" Cancio ',
+    name: ' Frances "Caliente" Cancio ',
     city: "atx",
     cardImage: "images/atxfranciscancio.png"
 }, {
@@ -422,7 +422,7 @@ let butsm = document.querySelector('.sm');
 
 butsm.addEventListener('click', function(evt){
     let input = evt.srcElement.className
-    if (smCount === 4) {
+    if (smCount === 5) {
         msgElTwo.innerText="SICK GNARLY, BRAH!";
         confetti.start(5000);
         document.getElementById('stuPic').style.display='none';
