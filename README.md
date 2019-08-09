@@ -1,23 +1,46 @@
-# GAProject1
-Pseudocode – Rep your city!
+# GAProject1 - Rep Your City!
 
--	When the game loads:
+## Play the game!
+[Rep Your City](https://www.rep-your-city-ga19.surge.sh)
 
-Player will click on the “Let’s do this” button to begin the game 60 second timer will begin.
+<h2>Objectives</h2>
+
+* You have 60 seconds
+* Match the student card with the corresponding cohort city.
+* Due to cohort enrollment limitations:
+
+    - Santa Monica requires 6 student matches to win
+    - San Francisco requires 8 student matches to win
+    - Dallas requires 8 student matches to win
+
+### When the game loads:
+
+- Player will click on the “Let’s do this” button to begin the game and initiate the 60 second timer.
     
-First student card will appear in the middle of the screen
-    
-Random card will be selected from the object list (students) using a splice function so that the student card does not appear again.
+- Player will click on "Gimme a Card!" to draw a random student from the "studentCards" array.
+- After each play, the student will be pushed into a seperate "receptical" array to prevent repeat students
+- The game ends when a city gets its minimum required number of student matches to trigger the winning game over protocol.
+- If the player runs out of time then the game shuts down and a loss message appears.
 
--   Player objective:
+## Tech Used:
+- HTML
+- CSS
+- Javascript
+- Confetti
+- Freesound.org
+- If they happen to be cyborgs:
+    - damn near everyone in this classroom
 
-Player will match the student with the city in which he/she is a part of the cohort before the timer hits 0.
+## Features
+- Sounds for incorrect selections
+- Shaking buttons
+- A genuine usefulness (learning each other's names, nahmsayin)
 
-If the city is correct, the student card will bounce to that city and the “counter” attached to that city will go up by 1.
+## Wireframe
+[The initial vision](https://wireframe.cc/z3hoEu)
 
-Otherwise if the city clicked is not correct the card will be discarded, and a sound will emit
--	Winner
-
-A player wins when they’ve matched 10 correct students to any one of the 4 cities before the timer hits 0
-
-If the player runs out of time then the game shuts down and a loss message appears.
+## Stretch Goals
+- Be more flexible, haha!
+- Difficulty levels without names
+- Animations for studentCards to bounce over when correct city is clicked
+- Add Poppa Shaz and the Andrew "the great bill" Murray (enrollment limitations)

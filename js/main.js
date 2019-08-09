@@ -45,7 +45,7 @@ const studentCards = [{
     cardImage: "images/atxbeverlyosoria.jpg"
 },
     {
-    name: ' Chris "The Plow" Mayfield ',
+    name: ' Chris "Kingpin" Mayfield ',
     city: "atx",
     cardImage: "images/atxchrismayfield.png"
 },
@@ -97,7 +97,7 @@ const studentCards = [{
     city: "atx",
     cardImage: "images/atxrobindao.png"
 }, {
-    name: ' Vittoria "THE BUCKEYE" Erdem ',
+    name: ' Vittoria "O - H" Erdem ',
     city: "atx",
     cardImage: "images/atxvittoriaerdem.png"
 }, {
@@ -109,11 +109,11 @@ const studentCards = [{
     city: "atx",
     cardImage: "images/atxconnormccabe.png"
 }, {
-    name: ' Lily "Better than yours" Best ',
+    name: ' Lily "Illustrates" Best ',
     city: "atx",
     cardImage: "images/atxlilybest.png"
 }, {
-    name: ' Julia "Brown Eyed Girl" Galan ',
+    name: ' Julia "Brown-Eyed-Girl" Galan ',
     city: "atx",
     cardImage: "images/atxjuliagalan.png"
 }, {
@@ -317,12 +317,10 @@ function dealCard() {
     randStu = Math.floor(Math.random() * maxRange);
     console.log(randStu ,maxRange)
     cardPulled=studentCards[randStu];
-    console.log(cardPulled);
     stuPic.setAttribute('src', `${studentCards[randStu].cardImage}`);
     stuName.innerHTML=`${studentCards[randStu].name}`;
     objArr.push(studentCards[randStu]);
     studentCards.splice(randStu, 1);
-    console.log(objArr)
     if (studentCards.length === 0){
         gameOver();
     }

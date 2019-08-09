@@ -9,7 +9,8 @@ h1 {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(https://i.imgur.com/z51BVK1.jpg);
+    background-image: url(https://wildaid.org/wp-content/uploads/2017/09/dark-blue-ocean-surface-seen-from-underwater-looped-slow-motion-fractal-waves-underwater-and-rays-of-sunlight-shining-through-4k-seamless-loop-video_hy1i0dcrl_thumbnail-full01-1024x576.png);
+    background-size: cover;
     /* background-image: url(https://i.imgur.com/7m0r79s.jpg); */
     /* background-color: #006666;
     background-image: url("https://www.transparenttextures.com/patterns/felt.png");
@@ -24,7 +25,7 @@ body {
 }
 #stuPic {
     height: 275px;
-    width: 275px;
+    width: 300px;
     background: black;
     background-position-x: 150vmin;
     background-position-y: 150vmin;
@@ -41,11 +42,13 @@ h2 {
     background: black;
     background-position-x: center;    
     color: orange;
-    font-size: 16px;
+    font-size: 20px;
 }
 .msg {
     display: flex;
     justify-content: center;
+    background: black;
+    color: orange;
 }
 .msgTwo {
     display: flex;
@@ -60,6 +63,27 @@ h2 {
     font-weight: bold;
     background: black;
     color: orange;
+    cursor: pointer;
+}
+.resBut:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
 }
 
 .circleOne {
@@ -68,8 +92,6 @@ h2 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: black;
-    color: white;
 }
 .circleTwo {
     content: ' \25CF';
@@ -77,8 +99,6 @@ h2 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: green;
-    color: white;
 }
 .circleThree {
     content: ' \25CF';
@@ -86,8 +106,6 @@ h2 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: blue;
-    color: white;
 }
 .circleFour {
     content: ' \25CF';
@@ -95,8 +113,6 @@ h2 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: red;
-    color: white;
 }
 #upper_left {
     position: absolute;
@@ -141,6 +157,27 @@ h2 {
     font-weight: bold;
     background: orange;
     color: black;
+    cursor: pointer;
+}
+.sf:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
 }
 .sm {
     height: 100px;
@@ -149,6 +186,27 @@ h2 {
     font-weight: bold;
     background: orange;
     color: black;
+    cursor: pointer;
+}
+.sm:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
 }
 .dal {
     height: 100px;
@@ -157,6 +215,27 @@ h2 {
     font-weight: bold;
     background: orange;
     color: black;
+    cursor: pointer;
+}
+.dal:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
 }
 .atx {
     height: 100px;
@@ -165,10 +244,32 @@ h2 {
     font-weight: bold;
     background: orange;
     color: black;
+    cursor: pointer;
+}
+.atx:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
 }
 #gameButtons {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .startGame {
     height: 100px;
@@ -179,6 +280,26 @@ h2 {
     background: black;
     color: orange;
 }
+.startGame:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
+}
 .dealCard {
     height: 100px;
     width: 200px;
@@ -187,6 +308,26 @@ h2 {
     font-weight: bold;
     background: black;
     color: orange;
+}
+.dealCard:hover{
+    animation: shake 0.6s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
 }
 .timer {
     display: flex;
