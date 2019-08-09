@@ -6,6 +6,10 @@ const soundThree = new Audio('sounds/uhoh.wav');
 const soundFour = new Audio('sounds/furby.wav');
 const soundFive = new Audio('sounds/applause.wav');
 const soundSix = new Audio('sounds/awww.wav');
+const soundSeven = new Audio('sounds/nice.wav');
+const soundEight = new Audio('sounds/alright.flac');
+const soundNine = new Audio('sounds/cool/wav');
+const soundTen = new Audio('sounds/whooo.wav');
 //variable.play();
 const studentCards = [{
     name: 'Ben "So" Manley',
@@ -109,7 +113,7 @@ const studentCards = [{
     city: "atx",
     cardImage: "images/atxconnormccabe.png"
 }, {
-    name: ' Lily "Illustrates" Best ',
+    name: ' Lily "Draws" Best ',
     city: "atx",
     cardImage: "images/atxlilybest.png"
 }, {
@@ -409,6 +413,7 @@ button.addEventListener('click', function(evt){
     }if (cardPulled.city === input) {
         sfCount++;
         sfCountEl.innerText = sfCount;
+        soundTen.play();
         dealCard();
     } else {
         soundFour.play();
@@ -430,6 +435,7 @@ butsm.addEventListener('click', function(evt){
     } if (cardPulled.city === input) {
         smCount++;
         smCountEl.innerText = smCount;
+        soundNine.play();
         dealCard();
     } else{ 
         soundTwo.play();
@@ -451,6 +457,7 @@ butdal.addEventListener('click', function(evt){
     } if (cardPulled.city === input) {
         dalCount++;
         dalCountEl.innerText = dalCount;
+        soundSeven.play();
         dealCard();
     } else {
         soundOne.play();
@@ -472,6 +479,7 @@ butatx.addEventListener('click', function(evt){
     } if (cardPulled.city === input) {
         atxCount++;
         atxCountEl.innerText = atxCount;
+        soundEight.play();
         dealCard();
     } else {
         soundThree.play();

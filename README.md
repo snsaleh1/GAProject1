@@ -34,7 +34,7 @@
 ## Features
 - Sounds for incorrect selections
 - Shaking buttons
-- A genuine usefulness (learning each other's names, nahmsayin)
+- A genuine usefulness (learning each others names, nahmsayin)
 
 ## Wireframe
 [The initial vision](https://wireframe.cc/z3hoEu)
@@ -43,4 +43,4 @@
 - Be more flexible, haha!
 - Difficulty levels without names
 - Animations for studentCards to bounce over when correct city is clicked
-- Add Poppa Shaz and the Andrew "the great bill" Murray (enrollment limitations)
+- Add Poppa Shaz and Poppa Murray (enrollment limitations)
